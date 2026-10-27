@@ -1,0 +1,108 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: #1f2328;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+.workspace__header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  padding: 0.4rem 0.9rem;
+  touch-action: manipulation;
+}
+
+select {
+  background-color: #ffffff;
+  color: #1f2328;
+}
+
+:focus-visible {
+  outline: 2px solid #0969da;
+  outline-offset: 2px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.field--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.field__error,
+.form-error,
+.load-error p {
+  color: #b42318;
+  margin: 0;
+}
+
+.create-form {
+  border: 1px solid #d0d7de;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.session-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.session {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.25rem 1rem;
+  border: 1px solid #d0d7de;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.session__title {
+  overflow-wrap: anywhere;
+}
+
+.session__time {
+  grid-column: 1 / -1;
+  color: #57606a;
+  font-variant-numeric: tabular-nums;
+}
